@@ -1,0 +1,40 @@
+div.tyre_finder {
+    width: 400px;
+}
+.tyre_line {
+    width: 400px;
+    margin: 15px 0px;
+}
+.tyre_finder select {
+    width: 100%;
+    font-weight: 400;
+    border: 1px solid #8d9ca5;
+    border-radius: 3px;
+    background: #fff;
+    padding: 0 0 0 10px;
+    -webkit-appearance: none;
+}
+.tyre_finder #top_features_Saison,
+.tyre_finder #top_features_Price {
+    width: 100%;
+}
+.tyre_finder #top_features_Reifenbreite,
+.tyre_finder #top_features_Querschnitt,
+.tyre_finder #top_features_Zoll {
+    width: 32.5%;
+}
+#submitSearch {
+    color: #fff;
+    display: inline-block;
+    background: #e41b44;
+    border: 1px solid #e41b44;
+    border-radius: 2px;
+    font-size: .875rem;
+    line-height: .875rem;
+    padding: .688rem 1.25rem .625rem 1.25rem;
+    text-align: center;
+}
+
+.header-img {
+    width: 100%;
+}
