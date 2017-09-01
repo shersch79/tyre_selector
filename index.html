@@ -1,0 +1,149 @@
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+	<script src="js/jquery-csv.min.js"></script>
+	<script type="application/javascript" src="index.js"></script>
+</head>
+
+<h1>Reifenfinder</h1>
+
+<section>
+	<div class="tyre_finder">
+		<img class="header-img" src="https://c1.staticflickr.com/5/4380/36815521381_a0faaf3805_o.png"/>
+
+		<div class="tyre_line">
+			<label for="top_features_Saison">Saison</label>
+			<br />
+			<select id="top_features_Saison">
+				<option value="default"> - </option>
+				<option value="Sommerreifen">Sommerreifen</option>
+				<option value="Winterreifen">Winterreifen</option>
+				<option value="Ganzjahresreifen">Ganzjahresreifen</option>
+			</select>
+		</div>
+
+		<div class="tyre_line">
+			<label for='top_features_Reifenbreite'>Breite</label> /
+			<label for='top_features_Querschnitt'>Querschnitt</label> /
+			<label for='top_features_Zoll'>Zoll</label>
+			<br />
+			<select id='top_features_Reifenbreite'>
+				<option value="default"> - </option>
+				<option value="125">125</option>
+				<option value="135">135</option>
+				<option value="145">145</option>
+				<option value="155">155</option>
+				<option value="165">165</option>
+				<option value="175">175</option>
+				<option value="185">186</option>
+				<option value="195">195</option>
+				<option value="205">205</option>
+				<option value="215">215</option>
+				<option value="220">220</option>
+				<option value="225">225</option>
+				<option value="235">235</option>
+				<option value="245">245</option>
+				<option value="255">255</option>
+				<option value="265">265</option>
+				<option value="270">270</option>
+				<option value="275">275</option>
+				<option value="285">285</option>
+				<option value="295">295</option>
+			</select>
+
+			<select id='top_features_Querschnitt'>
+				<option value="default"> - </option>
+				<option value="25">25</option>
+				<option value="30">30</option>
+				<option value="35">35</option>
+				<option value="40">40</option>
+				<option value="45">45</option>
+				<option value="50">50</option>
+				<option value="55">55</option>
+				<option value="60">60</option>
+				<option value="65">65</option>
+				<option value="70">70</option>
+				<option value="75">75</option>
+				<option value="80">80</option>
+				<option value="85">85</option>
+				<option value="90">90</option>
+			</select>
+
+
+			<select id='top_features_Zoll'>
+				<option value="default"> - </option>
+				<option value="10">10</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+			</select>
+		</div>
+
+		<div class="tyre_line">
+			<label for="top_features_Price">Preis Kategorie</label>
+			<br />
+			<select id="top_features_Price">
+				<option value="default"> - </option>
+				<option value="budget">Budget</option>
+				<option value="premium">Premium</option>
+				<option value="quality">Quality</option>
+			</select>
+		</div>
+		<div class="tyre_line">
+			<button id="submitSearch">Suchen</button>
+		</div>
+
+	</div>
+</section>
+
+<style>
+	div.tyre_finder {
+		width: 400px;
+	}
+	.tyre_line {
+		width: 400px;
+		margin: 15px 0px;
+	}
+	.tyre_finder select {
+		width: 100%;
+		font-weight: 400;
+		border: 1px solid #8d9ca5;
+		border-radius: 3px;
+		background: #fff;
+		padding: 0 0 0 10px;
+		-webkit-appearance: none;
+	}
+	.tyre_finder #top_features_Saison,
+	.tyre_finder #top_features_Price {
+		width: 100%;
+	}
+	.tyre_finder #top_features_Reifenbreite,
+	.tyre_finder #top_features_Querschnitt,
+	.tyre_finder #top_features_Zoll {
+		width: 32.5%;
+	}
+	#submitSearch {
+		color: #fff;
+		display: inline-block;
+		background: #e41b44;
+		border: 1px solid #e41b44;
+		border-radius: 2px;
+		font-size: .875rem;
+		line-height: .875rem;
+		padding: .688rem 1.25rem .625rem 1.25rem;
+		text-align: center;
+	}
+
+	.header-img {
+		width: 100%;
+	}
+</style>
